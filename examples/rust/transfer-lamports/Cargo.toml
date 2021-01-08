@@ -16,7 +16,7 @@ solana-program = "1.5.1"
 
 [dev-dependencies]
 solana-program-test = "1.5.0"
-solana-sdk = "1.5.0"
+solana-sdk = { path = "../../../../solana/sdk" }
 tokio = { version = "0.3", features = ["macros"]}
 
 [lib]
@@ -24,3 +24,4 @@ crate-type = ["cdylib", "lib"]
 
 [package.metadata.docs.rs]
 targets = ["x86_64-unknown-linux-gnu"]
+
